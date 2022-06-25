@@ -1,0 +1,48 @@
+footer {
+    background-color: map-get($colors, darkBg);
+    color: map-get($colors, Couleur3);
+    padding: 5rem 1rem;
+
+    .l-footer-about, .l-footer-Newsletter, .l-footer-followMe {
+        p {
+            color: map-get($colors, txt);
+        }   
+    }
+
+    .l-footer-buttonSubmit {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+
+        input {
+            outline: none;
+            padding: 0.5rem;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .l-footer-buttonSubmit-arrow {
+            display: inline-block;
+            background-color: map-get($colors, Btn1);
+            height: 2.8rem;
+            width: 2.8rem;
+
+            i {
+                padding: 1rem;
+            }
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        padding: 2rem 0;
+    }
+    .l-footer-socialIcons {
+        padding: 1rem;
+        i {
+            padding: 0 0.3rem;
+        }
+    }
+}
+

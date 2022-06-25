@@ -1,0 +1,117 @@
+.l-main-aside-image {
+    padding: 5rem 0;
+    img {
+        width: 100%;
+    }
+}
+
+/* About */
+.l-main-section-about {
+    padding: 0 1rem;
+
+    p {
+        padding: 2rem 0;
+    }
+
+    h2, h3, a {
+        text-transform: uppercase;
+    }
+}
+
+.l-main-section-about-btn {
+    background: map-get($colors, gradientBg1);
+    width: 15rem;
+    height: 3rem;
+    padding: 0.7rem;
+    text-align: center;
+    
+    a {
+        color: map-get($colors, Couleur3);
+        text-decoration: none;
+    }
+}
+
+/* Expertness*/
+.l-main-section-expertness {
+    margin: 0 0 5rem 0;
+    padding: 0 1rem;
+    p {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.l-main-section-expertnessBar {
+    border-radius: 1rem;
+    background: map-get($colors, txt);
+    opacity: 30%;
+    width: 100%;
+    height: 0.8rem;
+    box-shadow: ;
+}
+
+.l-main-section-expertnessBar-inside {
+    border-radius: 1rem;
+    height: 0.8rem;
+    background: map-get($colors, gradientBg1);
+}
+
+.AE {
+    width: 85%;
+}
+
+.Photoshop {
+    width: 90%;
+}
+
+.Illustrator {
+    width: 70%;
+}
+
+.Sublime {
+    width: 95%;
+}
+
+.Sketch {
+    width: 85%;
+}
+
+/* Feedback */
+.l-main-section-feedback-intro {
+    padding: 8rem 0;
+    text-align: center;
+    background: map-get($colors, bannerBg3);
+}
+
+.l-main-setion-feedback-user {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1rem;
+
+    img {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+    }
+
+    span {
+        display: inline-block;
+        margin: 0.5rem 0;
+        font-weight: bold;
+
+    }
+}
+
+/* Feedback */
+.l-main-section-space {
+    height: 8rem;
+    background: map-get($colors, bannerBg3);
+}
+
+.l-main-section-logo {
+    height: 15rem;
+    background: map-get($colors, gradientBg1);
+    padding: 20% 30%;
+}
