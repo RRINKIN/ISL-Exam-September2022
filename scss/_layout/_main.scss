@@ -1,3 +1,8 @@
+.l-main-section-about, .l-main-section-expertness, .l-main-section-feedback-intro, .l-main-section-feedback-user {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
 .l-main-aside-image {
     padding: 5rem 0;
     img {
@@ -18,23 +23,10 @@
     }
 }
 
-.l-main-section-about-btn {
-    background: map-get($colors, gradientBg1);
-    width: 15rem;
-    height: 3rem;
-    padding: 0.7rem;
-    text-align: center;
-    
-    a {
-        color: map-get($colors, Couleur3);
-        text-decoration: none;
-    }
-}
-
 /* Expertness*/
 .l-main-section-expertness {
-    margin: 0 0 5rem 0;
     padding: 0 1rem;
+    margin-bottom: 3rem;
     p {
         margin: 1rem 0;
         display: flex;
@@ -77,17 +69,21 @@
 }
 
 /* Feedback */
-.l-main-section-feedback-intro {
-    padding: 8rem 0;
-    text-align: center;
+.l-main-section-feedback{
     background: map-get($colors, bannerBg3);
 }
 
-.l-main-setion-feedback-user {
+.l-main-section-feedback-intro {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.l-main-section-feedback-user {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 1rem 1rem;
+    max-width: $max-width;
+    background: map-get($colors, standardBg);
 
     img {
         height: 3rem;
@@ -112,5 +108,7 @@
 .l-main-section-logo {
     height: 15rem;
     background: map-get($colors, gradientBg1);
-    padding: 20% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

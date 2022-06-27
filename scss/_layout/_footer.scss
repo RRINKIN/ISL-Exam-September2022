@@ -1,9 +1,12 @@
 footer {
     background-color: map-get($colors, darkBg);
     color: map-get($colors, Couleur3);
-    padding: 5rem 1rem;
 
     .l-footer-about, .l-footer-Newsletter, .l-footer-followMe {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 0 1rem;
+
         p {
             color: map-get($colors, txt);
         }   
