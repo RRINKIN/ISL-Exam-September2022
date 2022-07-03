@@ -3,13 +3,15 @@ footer {
     color: map-get($colors, Couleur3);
 
     .l-footer-about, .l-footer-Newsletter, .l-footer-followMe {
-        max-width: $max-width;
-        margin: 0 auto;
         padding: 0 1rem;
-
         p {
             color: map-get($colors, txt);
         }   
+    }
+
+    .l-footer-wrapper {
+        max-width: $max-width;
+        margin: 0 auto;
     }
 
     .l-footer-buttonSubmit {
@@ -49,3 +51,28 @@ footer {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .l-main-section-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;   
+
+        img {
+            padding: 0 2rem;
+        }
+    }
+    
+    .l-footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: $max-width;
+        margin: 0 auto;
+    }
+
+    .l-footer-about, .l-footer-Newsletter, .l-footer-followMe {
+        width: 33%;
+    }
+}

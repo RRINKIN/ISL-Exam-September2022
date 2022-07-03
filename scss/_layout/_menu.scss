@@ -1,0 +1,33 @@
+.l-header-nav {
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    transition-duration: 1s;
+    width: 80vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: map-get($colors, darkBg);
+    opacity: 0.95;
+
+    ul {
+        padding: 1rem;
+    }
+
+    li {
+        padding: 1rem 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: map-get($colors, Couleur3);
+        text-transform: uppercase;
+    }
+
+    .is-active {
+        color: map-get($colors, link);
+    }
+}
+
+#trigger:checked ~ .l-header-nav {
+    left: 0;
+}
