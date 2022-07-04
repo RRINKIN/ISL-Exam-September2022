@@ -28,7 +28,6 @@
     z-index: 9999;
     cursor: pointer;
 }
-
 .trigger {
     position: absolute;
     left: -150vw;
@@ -71,6 +70,7 @@
 
 /* Desktop */
 @media screen and (min-width: 600px) {
+/* Menu */
     .l-header-menuWrapper {
         display: flex;
         flex-direction: row;
@@ -81,55 +81,12 @@
     .l-header-burger {
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
     }
 
     .l-header-burger-span {
         display: none;
-    }
-
-    .l-header-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: center;
-
-        ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            list-style-type: none;
-        }
-
-        li {
-            padding: 1rem;
-        }
-
-        a {
-            text-transform: uppercase;
-            text-decoration: none;
-            color: black;
-        }
-
-        li:hover {
-            a {
-                color: map-get($colors, Btn2);
-                font-weight: bolder;
-            }
-        }
-
-        li:hover::before {
-            content: "";
-            display: block;
-            border-bottom: 1px solid map-get($colors, Btn2);
-            width: auto;
-            margin-bottom: -1.5rem;
-        }
-
-        .is-active{
-            color: map-get($colors, Btn2);
-        }
     }      
 }
 

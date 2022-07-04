@@ -219,6 +219,7 @@ footer .l-footer-socialIcons i {
 
 /* Desktop */
 @media screen and (min-width: 600px) {
+  /* Menu */
   .l-header-menuWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,63 +243,15 @@ footer .l-footer-socialIcons i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .l-header-burger-span {
     display: none;
-  }
-  .l-header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .l-header-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    list-style-type: none;
-  }
-  .l-header-nav li {
-    padding: 1rem;
-  }
-  .l-header-nav a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-  }
-  .l-header-nav li:hover a {
-    color: #62bdfc;
-    font-weight: bolder;
-  }
-  .l-header-nav li:hover::before {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #62bdfc;
-    width: auto;
-    margin-bottom: -1.5rem;
-  }
-  .l-header-nav .is-active {
-    color: #62bdfc;
   }
 }
 
@@ -579,6 +532,7 @@ footer .l-footer-socialIcons i {
 
 .l-header-nav ul {
   padding: 1rem;
+  list-style-type: none;
 }
 
 .l-header-nav li {
@@ -597,6 +551,41 @@ footer .l-footer-socialIcons i {
 
 #trigger:checked ~ .l-header-nav {
   left: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .l-header-nav {
+    position: relative;
+    left: 0vw;
+    top: 0;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 1;
+    background: none;
+  }
+  .l-header-nav ul {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .l-header-nav li {
+    padding: 1rem;
+  }
+  .l-header-nav a {
+    text-decoration: none;
+    color: #777777;
+    text-transform: uppercase;
+  }
+  .l-header-nav .is-active {
+    color: #8490ff;
+  }
 }
 
 .l-main-section-about-btn {
