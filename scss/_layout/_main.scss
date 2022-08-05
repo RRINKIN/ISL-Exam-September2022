@@ -1,4 +1,4 @@
-.l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback-intro, .l-main-section-feedback-user, .l-main-section-index1, .l-main-section-index2 {
+.l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback-intro, .l-main-section-feedback-user, .l-main-section-index1, .l-main-section-index2, .l-main-section-index3, .l-main-section-index4, .l-main-section-index5 {
     max-width: $max-width;
     margin: 0 auto;
 }
@@ -8,7 +8,6 @@
     padding: 5rem 0 0 0;
     display: flex;
     justify-content: center;
-
     img {
         max-width: 100%;
     }
@@ -27,6 +26,10 @@
     }
 }
 
+.sectionWrapper {
+    background-color: map-get($colors, purpleBg); 
+}
+
 .l-main-section-about-text, .l-main-section-index-text, .l-main-section-index-services, .l-main-section-index-projects, .l-main-section-index-blog {
     padding: 5rem 0;
     h3, h2, p {
@@ -38,11 +41,22 @@
     }
 }
 
+
+/* Services, projects & blog */
 .l-main-section-index-services, .l-main-section-index-projects, .l-main-section-index-blog {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+
+    .l-main-section-index-services-title, .l-main-section-index-blog-title {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    .l-main-section-index-projects-title, .l-main-section-index-blog-title {
+        width: 100%;
+    }
 
     .l-main-section-index3-services, .l-main-section-index4-example {
         padding: 2rem 0;
@@ -176,7 +190,6 @@
     display: none;
 }
 
-/* Feedback */
 .l-main-section-space {
     height: 8rem;
     background: map-get($colors, bannerBg3);
@@ -195,7 +208,6 @@
 }
 
 /* Index page */
-
 .l-main-aside-achievements {
     height: 15rem;
     background: map-get($colors, gradientBg1);
@@ -215,13 +227,18 @@
 
 @media screen and (min-width: 600px) {
     /* about */
-    .l-main-section-about1 {
+    .l-main-section-about1, .l-main-section-index1, .l-main-section-index2, .l-main-section-index3, .l-main-section-index-projects, .l-main-section-index-blog{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .l-main-section-index3-services, .l-main-section-index4-example, .l-main-section-index5-posts {
+        max-width: 30%;
     }
 
-    .l-main-section-about-image {
+    .l-main-section-about-image, .l-main-section-index-image1, .l-main-section-index-image2 {
         padding: 5rem 0 0 0;
         width: 50%;
         img {
@@ -229,18 +246,30 @@
         }
     }
 
-    .l-main-section-about-text {
+    .l-main-section-about-text, .l-main-section-index-text {
         padding: 5rem 0;
-        max-width: 50%;
+        max-width: 49%;
         h3, h2, p {
             padding: 1rem 0;
         }
     
-        .l-main-section-about-btn {
+        .l-main-section-about-btn, .l-main-section-index-btn {
             margin: 2rem 0 0 0;
         }
     }
 
+    .l-main-section-index-projects {
+        .l-main-section-index4-example {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .l-main-section-index-projects-title {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    
     /* expertness */
     .l-main-section-expertness-wrapper {
         display: flex;

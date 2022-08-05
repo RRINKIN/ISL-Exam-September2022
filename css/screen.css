@@ -293,7 +293,7 @@ footer .l-footer-socialIcons i {
   padding: 0 1rem;
 }
 
-.l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback-intro, .l-main-section-feedback-user, .l-main-section-index1, .l-main-section-index2 {
+.l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback-intro, .l-main-section-feedback-user, .l-main-section-index1, .l-main-section-index2, .l-main-section-index3, .l-main-section-index4, .l-main-section-index5 {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -325,6 +325,10 @@ footer .l-footer-socialIcons i {
   text-transform: uppercase;
 }
 
+.sectionWrapper {
+  background-color: #b6bdff1c;
+}
+
 .l-main-section-about-text, .l-main-section-index-text, .l-main-section-index-services, .l-main-section-index-projects, .l-main-section-index-blog {
   padding: 5rem 0;
 }
@@ -337,6 +341,7 @@ footer .l-footer-socialIcons i {
   margin: 2rem 0 0 0;
 }
 
+/* Services, projects & blog */
 .l-main-section-index-services, .l-main-section-index-projects, .l-main-section-index-blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,6 +352,15 @@ footer .l-footer-socialIcons i {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+}
+
+.l-main-section-index-services .l-main-section-index-services-title, .l-main-section-index-services .l-main-section-index-blog-title, .l-main-section-index-projects .l-main-section-index-services-title, .l-main-section-index-projects .l-main-section-index-blog-title, .l-main-section-index-blog .l-main-section-index-services-title, .l-main-section-index-blog .l-main-section-index-blog-title {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.l-main-section-index-services .l-main-section-index-projects-title, .l-main-section-index-services .l-main-section-index-blog-title, .l-main-section-index-projects .l-main-section-index-projects-title, .l-main-section-index-projects .l-main-section-index-blog-title, .l-main-section-index-blog .l-main-section-index-projects-title, .l-main-section-index-blog .l-main-section-index-blog-title {
+  width: 100%;
 }
 
 .l-main-section-index-services .l-main-section-index3-services, .l-main-section-index-services .l-main-section-index4-example, .l-main-section-index-projects .l-main-section-index3-services, .l-main-section-index-projects .l-main-section-index4-example, .l-main-section-index-blog .l-main-section-index3-services, .l-main-section-index-blog .l-main-section-index4-example {
@@ -502,7 +516,6 @@ footer .l-footer-socialIcons i {
   display: none;
 }
 
-/* Feedback */
 .l-main-section-space {
   height: 8rem;
   background: #f5f5f5a6;
@@ -553,7 +566,7 @@ footer .l-footer-socialIcons i {
 
 @media screen and (min-width: 600px) {
   /* about */
-  .l-main-section-about1 {
+  .l-main-section-about1, .l-main-section-index1, .l-main-section-index2, .l-main-section-index3, .l-main-section-index-projects, .l-main-section-index-blog {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,23 +576,36 @@ footer .l-footer-socialIcons i {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .l-main-section-about-image {
+  .l-main-section-index3-services, .l-main-section-index4-example, .l-main-section-index5-posts {
+    max-width: 30%;
+  }
+  .l-main-section-about-image, .l-main-section-index-image1, .l-main-section-index-image2 {
     padding: 5rem 0 0 0;
     width: 50%;
   }
-  .l-main-section-about-image img {
+  .l-main-section-about-image img, .l-main-section-index-image1 img, .l-main-section-index-image2 img {
     width: 100%;
   }
-  .l-main-section-about-text {
+  .l-main-section-about-text, .l-main-section-index-text {
     padding: 5rem 0;
-    max-width: 50%;
+    max-width: 49%;
   }
-  .l-main-section-about-text h3, .l-main-section-about-text h2, .l-main-section-about-text p {
+  .l-main-section-about-text h3, .l-main-section-about-text h2, .l-main-section-about-text p, .l-main-section-index-text h3, .l-main-section-index-text h2, .l-main-section-index-text p {
     padding: 1rem 0;
   }
-  .l-main-section-about-text .l-main-section-about-btn {
+  .l-main-section-about-text .l-main-section-about-btn, .l-main-section-about-text .l-main-section-index-btn, .l-main-section-index-text .l-main-section-about-btn, .l-main-section-index-text .l-main-section-index-btn {
     margin: 2rem 0 0 0;
+  }
+  .l-main-section-index-projects .l-main-section-index4-example {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .l-main-section-index-projects .l-main-section-index-projects-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   /* expertness */
   .l-main-section-expertness-wrapper {

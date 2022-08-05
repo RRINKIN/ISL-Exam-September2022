@@ -38,23 +38,25 @@
         </div>
     </header>
     <main>
-        <section class="l-main-section-index1">
-            <div class="l-main-section-index-text">
-                <h3>This is Me</h3>
-                <h2>ISL Student</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolor facere quas totam repellat unde eligendi natus voluptate odit molestias consequuntur, deleniti dolorem adipisci ducimus possimus, autem nostrum accusamus. Aliquid!</p>
-                <div class="l-main-section-index-btn">
-                    <a href="#">Discover now</a>
+        <div class="sectionWrapper"> <!-- Check for W3C if Section can be into Div-->
+            <section class="l-main-section-index1">
+                <div class="l-main-section-index-text">
+                    <h3>This is Me</h3>
+                    <h2>ISL Student</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolor facere quas totam repellat unde eligendi natus voluptate odit molestias consequuntur, deleniti dolorem adipisci ducimus possimus, autem nostrum accusamus. Aliquid!</p>
+                    <div class="l-main-section-index-btn">
+                        <a href="#">Discover now</a>
+                    </div>
                 </div>
                 <div class="l-main-section-index-image1">
                     <img src="./images/hero-img.png" alt="image_Raf2">
                 </div>  
-                <div class="l-main-section-index-image2">
-                    <img src="./images/about-img.png" alt="image_Raf">
-                </div>
-            </div>    
-        </section>
+            </section>
+        </div>
         <section class="l-main-section-index2">
+            <div class="l-main-section-index-image2">
+                <img src="./images/about-img.png" alt="image_Raf">
+            </div>   
             <div class="l-main-section-index-text">
                 <h3>About me</h3>
                 <h2>Personal details</h2>
@@ -66,8 +68,10 @@
         </section>
         <section class="l-main-section-index3">
             <div class="l-main-section-index-services">
-                <h2>My Offered Services</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cumque, unde incidunt laborum enim sapiente doloribus tempore dolor ex.</p>
+                <div class="l-main-section-index-services-title">
+                    <h2>My Offered Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cumque, unde incidunt laborum enim sapiente doloribus tempore dolor ex.</p>
+                </div>
                 <div class="l-main-section-index3-services">
                     <i class="fas fa-chart-pie"></i>
                     <h4>Web Design</h4>
@@ -114,14 +118,16 @@
                 <p>Cups of Coffee</p>
             </div>
             <div class="l-main-aside-achievements-details">
-                <h3>435</h3>
+                <h3>434</h3>
                 <p>Real Professionals</p>
             </div>
         </aside>
         <section class="l-main-section-index4">
             <div class="l-main-section-index-projects">
-                <h2>Our Latest Featured Projects</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quidem.</p>
+                <div class="l-main-section-index-projects-title">
+                    <h2>Our Latest Featured Projects</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
                 <div class="l-main-section-index4-example">
                     <img src="./images/p1.jpg" alt="Image-Project1">
                     <h4>2D Vinyl Design</h4>
@@ -154,54 +160,58 @@
                 </div>
             </div>    
         </section>
-        <section class="l-main-section-index5">
-            <div class="l-main-section-index-blog">
-                <h2>Last Posts From Our Blog</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quidem.</p>
-                <div class="l-main-section-index5-posts">
-                    <img src="./images/b1.jpg" alt="Image-Blog-Post1">
-                    <div class="l-main-section-index5-posts-info">
-                        <img src="./images/blog/s-img.jpg" alt="Image-Blog-Writer">
-                        <p>Mark Wiens</p>
-                        <time datetime="2022-12-13">13th Dec</time>
-                        <i class="far fa-heart"></i>
-                        <p>15</p>
-                        <i class="far fa-comment"></i>
-                        <p>04</p>
+        <div class="sectionWrapper"> <!-- Check for W3C if Section can be into Div-->
+            <section class="l-main-section-index5">
+                <div class="l-main-section-index-blog">
+                    <div class="l-main-section-index-blog-title">
+                        <h2>Last Posts From Our Blog</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta rerum necessitatibus culpa harum saepe possimus voluptatibus officiis assumenda ipsa!</p>
                     </div>
-                    <h4>Break through self doubt and Fear</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam alias atque ducimus recusandae. Quo ipsum, blanditiis ullam iste inventore soluta.</p>
-                </div>
-                <div class="l-main-section-index5-posts">
-                    <img src="./images/b2.jpg" alt="Image-Blog-Post2">
-                    <div class="l-main-section-index5-posts-info">
-                        <img src="./images/blog/s-img.jpg" alt="Image-Blog-Writer">
-                        <p>Mark Wiens</p>
-                        <time datetime="2022-12-13">13th Dec</time>
-                        <i class="far fa-heart"></i>
-                        <p>15</p>
-                        <i class="far fa-comment"></i>
-                        <p>04</p>
+                    <div class="l-main-section-index5-posts">
+                        <img src="./images/b1.jpg" alt="Image-Blog-Post1">
+                        <div class="l-main-section-index5-posts-info">
+                            <img src="./images/blog/s-img.jpg" alt="Image-Blog-Writer">
+                            <p>Mark Wiens</p>
+                            <time datetime="2022-12-13">13th Dec</time>
+                            <i class="far fa-heart"></i>
+                            <p>15</p>
+                            <i class="far fa-comment"></i>
+                            <p>04</p>
+                        </div>
+                        <h4>Break through self doubt and Fear</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam alias atque ducimus recusandae. Quo ipsum, blanditiis ullam iste inventore soluta.</p>
                     </div>
-                    <h4>Portable Fashion for Young Women</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam alias atque ducimus recusandae. Quo ipsum, blanditiis ullam iste inventore soluta.</p>
-                </div>
-                <div class="l-main-section-index5-posts">
-                    <img src="./images/b3.jpg" alt="Image-Blog-Post3">
-                    <div class="l-main-section-index5-posts-info">
-                        <img src="./images/blog/s-img.jpg" alt="Image-Blog-Writer">
-                        <p>Mark Wiens</p>
-                        <time datetime="2022-12-13">13th Dec</time>
-                        <i class="far fa-heart"></i>
-                        <p>15</p>
-                        <i class="far fa-comment"></i>
-                        <p>04</p>
+                    <div class="l-main-section-index5-posts">
+                        <img src="./images/b2.jpg" alt="Image-Blog-Post2">
+                        <div class="l-main-section-index5-posts-info">
+                            <img src="./images/blog/s-img.jpg" alt="Image-Blog-Writer">
+                            <p>Mark Wiens</p>
+                            <time datetime="2022-12-13">13th Dec</time>
+                            <i class="far fa-heart"></i>
+                            <p>15</p>
+                            <i class="far fa-comment"></i>
+                            <p>04</p>
+                        </div>
+                        <h4>Portable Fashion for Young Women</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam alias atque ducimus recusandae. Quo ipsum, blanditiis ullam iste inventore soluta.</p>
                     </div>
-                    <h4>Do Dreams Serve A Premonition</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam alias atque ducimus recusandae. Quo ipsum, blanditiis ullam iste inventore soluta.</p>
-                </div>
-            </div>    
-        </section>
+                    <div class="l-main-section-index5-posts">
+                        <img src="./images/b3.jpg" alt="Image-Blog-Post3">
+                        <div class="l-main-section-index5-posts-info">
+                            <img src="./images/blog/s-img.jpg" alt="Image-Blog-Writer">
+                            <p>Mark Wiens</p>
+                            <time datetime="2022-12-13">13th Dec</time>
+                            <i class="far fa-heart"></i>
+                            <p>15</p>
+                            <i class="far fa-comment"></i>
+                            <p>04</p>
+                        </div>
+                        <h4>Do Dreams Serve A Premonition</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam alias atque ducimus recusandae. Quo ipsum, blanditiis ullam iste inventore soluta.</p>
+                    </div>
+                </div>    
+            </section>
+        </div>
         <aside class="l-main-section-logo">
             <img src="./images/l1.png" alt="logo_premium_label1">
             <img src="./images/l2.png" alt="logo_creative" class="d-none">
