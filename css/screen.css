@@ -79,6 +79,8 @@ footer .l-footer-socialIcons {
 
 footer .l-footer-socialIcons i {
   padding: 0 0.3rem;
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 600px) {
@@ -743,6 +745,64 @@ footer .l-footer-socialIcons i {
   .l-main-section-index-btn:hover {
     background: #8490ff;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .l-m-card-back {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .l-main-section-index-projects {
+    position: relative;
+  }
+  .l-main-section-index4-example {
+    width: 30%;
+  }
+  .l-m-card {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 339px;
+  }
+  .l-m-card:hover {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .l-m-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .l-m-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background: #b6bdff9f;
+    text-align: center;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    border-radius: 10px;
+  }
+  .l-m-card-back .l-m-card-back-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=screen.css.map */
