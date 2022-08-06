@@ -1,3 +1,20 @@
+* {
+    font-family: $font-family;
+    h1 {
+        font-weight: map-get($font-weight, h1);
+    }
+    h2 {
+        font-weight: map-get($font-weight, h2);
+    }
+    h3 {
+        font-weight: map-get($font-weight, h3);
+    }
+    p, span, q {
+        font-weight: map-get($font-weight, p);
+    }
+}
+
+/* Screen Width */
 .l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback-intro, .l-main-section-feedback-user, .l-main-section-index1, .l-main-section-index2, .l-main-section-index3, .l-main-section-index4, .l-main-section-index5 {
     max-width: $max-width;
     margin: 0 auto;
@@ -40,7 +57,6 @@
         margin: 2rem 0 0 0;
     }
 }
-
 
 /* Services, projects & blog */
 .l-main-section-index-services, .l-main-section-index-projects, .l-main-section-index-blog {

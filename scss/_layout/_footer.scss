@@ -12,6 +12,7 @@ footer {
     .l-footer-wrapper {
         max-width: $max-width;
         margin: 0 auto;
+        padding-bottom: 2rem;
     }
 
     .l-footer-buttonSubmit {
@@ -44,7 +45,7 @@ footer {
         padding: 2rem 0;
     }
     .l-footer-socialIcons {
-        padding: 1rem;
+        padding: 1rem 0;
         i {
             padding: 0 0.3rem;
             text-decoration: none;

@@ -32,6 +32,7 @@ footer .l-footer-about p, footer .l-footer-Newsletter p, footer .l-footer-follow
 footer .l-footer-wrapper {
   max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 footer .l-footer-buttonSubmit {
@@ -74,7 +75,7 @@ footer h3 {
 }
 
 footer .l-footer-socialIcons {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 footer .l-footer-socialIcons i {
@@ -295,6 +296,27 @@ footer .l-footer-socialIcons i {
   padding: 0 1rem;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+* h1 {
+  font-weight: 600;
+}
+
+* h2 {
+  font-weight: 500;
+}
+
+* h3 {
+  font-weight: 300;
+}
+
+* p, * span, * q {
+  font-weight: 100;
+}
+
+/* Screen Width */
 .l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback-intro, .l-main-section-feedback-user, .l-main-section-index1, .l-main-section-index2, .l-main-section-index3, .l-main-section-index4, .l-main-section-index5 {
   max-width: 1140px;
   margin: 0 auto;

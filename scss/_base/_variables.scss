@@ -1,9 +1,16 @@
+$max-width: 1140px;
 $font-family: 'Poppins', sans-serif;
 $font-size: (
     h1: 48px,
     h2: 32px,
     h3: 24px,
     textMain: 16px,
+);
+$font-weight: (
+    h1: 600,
+    h2: 500,
+    h3: 300,
+    p: 100,
 );
 $colors: (
     Btn1: #8490ff,
@@ -21,4 +28,3 @@ $colors: (
     purpleBgIntermediate:  #b6bdff9f,
     gradientBg1: linear-gradient(45deg, #8490ff, #62bdfc),
 );
-$max-width: 1140px;
