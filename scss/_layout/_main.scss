@@ -106,10 +106,8 @@
 }
 
 .l-main-section-about2 {
-    padding: 0 1rem;
-
     p {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 }
 
@@ -202,7 +200,7 @@
     }
 
     span {
-        display: inline-block;
+        display: block;
         margin: 0.5rem 0;
         font-weight: bold;
 
@@ -316,6 +314,10 @@
         }
     }
 
+    .l-main-section-about2 {
+        padding: 0 1rem 1rem 1rem;
+    }
+
     /* Achievements */
     .l-main-aside-achievements {
     
@@ -366,7 +368,7 @@
         }
     }
     
-    .l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback {
+    .l-main-section-about1, .l-main-section-expertness, .l-main-section-feedback {
         padding: 0 1rem;
     }
 

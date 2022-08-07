@@ -435,12 +435,8 @@ footer .l-footer-socialIcons i {
   width: 2rem;
 }
 
-.l-main-section-about2 {
-  padding: 0 1rem;
-}
-
 .l-main-section-about2 p {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .l-m-card-front img {
@@ -548,7 +544,7 @@ footer .l-footer-socialIcons i {
 }
 
 .l-main-section-feedback-user1 span, .l-main-section-feedback-user2 span {
-  display: inline-block;
+  display: block;
   margin: 0.5rem 0;
   font-weight: bold;
 }
@@ -666,6 +662,9 @@ footer .l-footer-socialIcons i {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .l-main-section-about2 {
+    padding: 0 1rem 1rem 1rem;
+  }
   /* Achievements */
   .l-main-aside-achievements .l-main-aside-achievements-details {
     padding: 2rem 2rem;
@@ -712,7 +711,7 @@ footer .l-footer-socialIcons i {
   * p, * span, * q, * i, * time {
     font-size: 16px;
   }
-  .l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback {
+  .l-main-section-about1, .l-main-section-expertness, .l-main-section-feedback {
     padding: 0 1rem;
   }
   .l-main-section-logo img {
