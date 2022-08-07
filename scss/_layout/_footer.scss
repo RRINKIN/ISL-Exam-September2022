@@ -72,20 +72,32 @@ footer {
         align-items: flex-start;
         justify-content: space-between;
         max-width: $max-width;
-        margin: 0 auto;
+        margin: 0 2rem;
     }
 
     .l-footer-about {
-        width: 40%;
+        width: 45%;
     }
 
-    .l-footer-Newsletter, .l-footer-followMe {
-        width: 30%;
+    .l-footer-Newsletter {
+        width: 35%;
+    }
+
+    .l-footer-followMe {
+        width: 20%;
     }
 }
 
 @media screen and (min-width: 900px) {
-    .l-footer-about, .l-footer-Newsletter, .l-footer-followMe {
-        width: 33%;
+    .l-footer-about {
+        width: 45%;
+    }
+
+    .l-footer-Newsletter {
+        width: 45%;
+    }
+
+    .l-footer-followMe {
+        width: 20%;
     }
 }

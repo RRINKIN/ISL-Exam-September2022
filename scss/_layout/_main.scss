@@ -9,7 +9,7 @@
     h3 {
         font-weight: map-get($font-weight, h3);
     }
-    p, span, q {
+    p, span, q, i, time {
         font-weight: map-get($font-weight, p);
     }
 }
@@ -110,6 +110,13 @@
 
     p {
         padding: 2rem 0;
+    }
+}
+
+.l-m-card-front {
+    img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
@@ -242,6 +249,29 @@
 }
 
 @media screen and (min-width: 600px) {
+    * {
+        h1 {
+            font-size: map-get($font-size, h1Tablet);
+        }
+        h2 {
+            font-size: map-get($font-size, h2Tablet);
+        }
+        h3 {
+            font-size: map-get($font-size, h3Tablet);
+        }
+        p, span, q, i, time {
+            font-size: map-get($font-size, textMainTablet);
+        }
+    }
+
+    .l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback {
+        padding: 0 2rem;
+    }
+
+    .l-main-section-feedback-intro {
+        padding: 4rem 0;
+      }
+
     /* about */
     .l-main-section-about1, .l-main-section-index1, .l-main-section-index2, .l-main-section-index3, .l-main-section-index-projects, .l-main-section-index-blog{
         display: flex;
@@ -285,6 +315,14 @@
             padding-bottom: 2rem;
         }
     }
+
+    /* Achievements */
+    .l-main-aside-achievements {
+    
+        .l-main-aside-achievements-details {
+            padding: 2rem 2rem;    
+        }
+    }
     
     /* expertness */
     .l-main-section-expertness-wrapper {
@@ -313,9 +351,36 @@
 }
 
 @media screen and (min-width: 900px) {
+    * {
+        h1 {
+            font-size: map-get($font-size, h1);
+        }
+        h2 {
+            font-size: map-get($font-size, h2);
+        }
+        h3 {
+            font-size: map-get($font-size, h3);
+        }
+        p, span, q, i, time {
+            font-size: map-get($font-size, textMain);
+        }
+    }
+    
+    .l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback {
+        padding: 0 1rem;
+    }
+
     .l-main-section-logo {
         img {
             padding: 0 2rem;
+        }
+    }
+
+    /* Achievements */
+    .l-main-aside-achievements {
+
+        .l-main-aside-achievements-details {
+            padding: 2rem 4rem;    
         }
     }
 }
