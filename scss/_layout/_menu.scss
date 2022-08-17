@@ -14,14 +14,13 @@
         list-style-type: none;
     }
 
-    li {
-        padding: 1rem 0;
-    }
-
     a {
+        display: block;
         text-decoration: none;
         color: map-get($colors, Couleur3);
         text-transform: uppercase;
+        padding: 1rem 0;
+        transition: all 400ms ease;
     }
 
     .is-active {
@@ -55,11 +54,8 @@
             padding: 1rem;
         }
 
-        li:hover {
-            padding: 0 1rem 1rem 1rem;
-            a {
-                color: map-get($colors, link);    
-            }
+        a:hover {
+            color: map-get($colors, link); 
         }
     
         a {

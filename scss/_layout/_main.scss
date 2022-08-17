@@ -131,8 +131,8 @@
 
 .l-main-section-expertnessBar {
     border-radius: 1rem;
-    background: map-get($colors, txt);
-    opacity: 30%;
+    background: map-get($colors, txtWithOpacity);
+    //opacity: 30%;
     width: 100%;
     height: 0.8rem;
 }
