@@ -746,6 +746,10 @@ footer .l-footer-socialIcons i {
   opacity: 0.95;
 }
 
+.l-header-nav .is-active {
+  color: #8490ff;
+}
+
 .l-header-nav ul {
   padding: 1rem;
   list-style-type: none;
@@ -793,9 +797,6 @@ footer .l-footer-socialIcons i {
     text-decoration: none;
     color: #777777;
     text-transform: uppercase;
-  }
-  .l-header-nav .is-active {
-    color: #8490ff;
   }
 }
 
